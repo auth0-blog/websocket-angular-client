@@ -15,7 +15,8 @@ export class ChatComponent implements AfterViewChecked, OnInit {
   @ViewChild('chatHistory') private chatHistory: ElementRef;
 
   constructor(private auth: AuthService, private router: Router) {
-    this.ws = new WebSocket('ws://localhost:8080/ws/messages');
+    const accessToken = localStorage.getItem('access_token');
+    this.ws = new WebSocket('ws://@localhost:8080/ws/messages?token=' + accessToken);
     this.ws.onmessage = (me => {
       const data = JSON.parse(me.data) as MessageEvent;
       this.messages.push(data);
