@@ -1,8 +1,4 @@
-<div class="container">
-  <div class="default-gray padding">
-    <h1>Reactive Chat App</h1>
-    <p>A real-time application written with Spring 5, Redis, and Angular.</p>
-  </div>
+<div style="display: flex; height: 100%; flex-direction: column;">
   <div #chatHistory class="history padding">
     <div *ngFor="let message of messages">
       <p>{{message.when}}</p>

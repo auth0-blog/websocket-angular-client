@@ -1,16 +1,5 @@
-.container {
-  background-color: blue;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.padding {
-  padding: 10px;
-}
-
-.default-gray {
-  background-color: #e0e0e0;
+:host {
+  width: 100%;
 }
 
 .history {
