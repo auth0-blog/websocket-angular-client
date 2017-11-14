@@ -4,8 +4,12 @@
     <div class="description-container">
       <p>A real-time application written with Spring 5, Redis, and Angular.</p>
       <div>
-        <button>Login</button>
-        <button>Logout</button>
+        <div *ngIf="!auth.authenticated">
+          <button (click)="auth.login()">Log In</button>
+        </div>
+        <div *ngIf="auth.authenticated">
+          <button (click)="auth.logout()">Log Out</button>
+        </div>
       </div>
     </div>
   </div>
