@@ -7,7 +7,7 @@ interface AuthConfig {
 }
 
 export const AUTH_CONFIG: AuthConfig = {
-  CLIENT_ID: 'Fq9ZNTv3UqnH6nI03kW4d3McxIYWEQRE',
+  CLIENT_ID: 'Y9ewnKjvAHkHfedDP0SY7WYplFfn7Dzx',
   CLIENT_DOMAIN: 'bkrebs.auth0.com',
   AUDIENCE: 'http://localhost:8080/ws/',
   REDIRECT: 'http://localhost:4200/callback',

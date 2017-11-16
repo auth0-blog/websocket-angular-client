@@ -1,11 +1,15 @@
 <div style="display: flex; height: 100%; flex-direction: column;">
   <div #chatHistory class="history padding">
     <div *ngFor="let message of messages">
-      <p>{{message.when}}</p>
-      <p>{{message.message}}</p>
+      <div class="message" [ngClass]="{'my-message': sub == message.sub}">
+        <img [src]="message.picture">
+        <p class="date">{{message.when}}</p>
+        <p class="name">{{message.name}}</p>
+        <p>{{message.message}}</p>
+      </div>
     </div>
   </div>
   <div class="form default-gray padding">
-    <input placeholder="Type a message" type="text">
+    <input #message placeholder="Type a message" type="text" (keyup.enter)="onEnter(message.value)">
   </div>
 </div>

@@ -24,3 +24,41 @@
   padding: 5px;
   font-size: 16px;
 }
+
+.message {
+  border: 1px solid #9ebb9c;
+  background-color: #bfe2bd;
+  padding: 10px;
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.my-message {
+  margin-left: auto;
+  border: 1px solid #cac890;
+  background-color: #f4f2ae;
+}
+
+img {
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  overflow:hidden;
+  float: left;
+  margin-right: 10px;
+}
+
+.message p {
+  margin-bottom: 0;
+}
+
+p.date {
+  margin-top: 3px;
+  font-size: 14px;
+  color: #444;
+}
+
+p.name {
+  margin-top: 0;
+}
